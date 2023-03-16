@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transaction History
+{% endblock %}
+
+{% block main %}
+<h1>Transaction log</h1>
+<br>
+    <div class="container mt-3">
+        <h4>Your Transactions:</h4>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Date / Hour</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Shares</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction["date"] }}</td>
+                        <td>{{ transaction["symbol"] |upper }}</td>
+                        <td>{{ transaction["name"] }}</td>
+                        <td>{{ transaction["type"] }}</td>
+                        <td>{{ transaction["shares"] }}</td>
+                        <td>${{ transaction["price"] |round(2)}}</td>
+                        <td>${{ transaction["total"] |round(2)}} </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+
+<h1>Stocks Available to Sell</h1>
+<br>
+<div class="container mt-3">
+<h4>Your Stocks</h4>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Name</th>
+        <th scope="col">Shares Owned</th>
+        <th scope="col">Current Price</th>
+        <th scope="col">Total Value</th>
+        <th scope="col">Shares To Sell</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <form action="/sell" method="post">
+      {% for stock in stocks %}
+       <div class="mb-3">
+         <tr>
+          <td align="left">{{ stock["symbol"] |upper }}</td>
+          <td align="left">{{ stock["name"] }}</td>
+          <td>{{ stock["SUM(shares)"] }}</td>
+          <td>${{ stock["price"] }}</td>
+          <td>${{ stock["total"] }} </td>
+          <td><input autocomplete="off" name={{ stock["symbol"]}} type="number" min="1" max={{ stock["SUM(shares)"] }}></td>
+          <td><input name="shares" type="hidden"> <!--value="1"--> </td>
+          <td><select hidden name="symbol">
+            <!--<option value="a">-->
+          </td>
+        </tr>
+        </div>
+        {% endfor %}
+   </tbody>
+   </table>
+    <button class="btn btn-primary" id="sell" name="sell" type="submit">Sell</button>
+    </form>
+</div>
+{% endblock %}
