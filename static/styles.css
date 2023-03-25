@@ -21,11 +21,32 @@ nav .navbar-brand .green
 {
     color: #2e944b;
 }
-h1 {
+h1
+{
     text-align: center;
     color: #5c0497;
-  }
+}
+h3
+{
+    text-align: center;
+    color: #5c0497;
+}
 body
 {
     background-color:rgba(208, 126, 255, 0.623);
+}
+iframe
+{
+    border: 1px solid black;
+    width: 100%;
+}
+.pic
+{
+    display: flex;
+    justify-content: center;
+}
+.info
+{
+    font-size: x-large;
+    text-align: justify;
 }

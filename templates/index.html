@@ -1,181 +1,261 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    BEST BIKE TOUR ON CDMX
+    THE BEST BIKE TOUR ON CDMX
+{% endblock %}
+{% block pic %}
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='1.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>    
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='2.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='3.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='4.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='5.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='6.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='7.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='8.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='9.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='10.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='11.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='12.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='13.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='14.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='15.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='16.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='17.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='18.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='19.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='20.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='21.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='22.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='23.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='24.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='25.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='26.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='27.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='28.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='29.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='30.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='31.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='32.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='33.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='34.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='35.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='36.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='37.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='38.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='39.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='40.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='41.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='42.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='43.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='44.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='45.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='46.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='47.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='48.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='49.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='50.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='51.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='52.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{{url_for('static', filename='53.jpg')}}" class="d-block mx-auto" height="350" alt="Biking on CDMX">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <br/>
+  </div>
+{% endblock %}
+{% block menu %}
+<div style="width:200px;" class="mx-auto" >
+  <form action="/" method="post">
+      <select name="info" id="info" class="form-select" onchange="this.form.submit()"">
+        <option value="" selected disabled hidden>Information...</option>
+        <option value="do">What you'll do...</option>
+        <option value="meet">Where we'll meet...</option>
+        <option value="be">Where you'll be...</option>
+        <option value="host">Meet your Host...</option>
+      </select>
+  </form>
+</div>
 {% endblock %}
 
-{% block main %}
+{% block do %}
+    <p>
+      <h3>What you'll do...</h3>
+        Mexico City is one of the biggest cities in the world. What better way to get to know this vast megalopolis than on two wheels?
+        
+        In this experience, we will see how the city has grown through the ages, and how it has adapted to meet the needs of its ever-growing population.
+        
+        This experience will focus on the most iconic landmarks that reflect the development of the capital since it was founded until the present day.
+    </p>
 
-<h1>20+ Must-See Sights on CDMX</h1>
+{% endblock %}
 
+{% block meet %}
+  <p>
+      <h3>Where we'll meet...</h3>
+      <h5>Colonia Condesa · Cuauhtémoc</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9515142885234!2d-99.17069218529691!3d19.414500786894553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff474fc95f2b%3A0x1e2c996989c34185!2zQXYgTcOpeGljbyA4LCBIaXDDs2Ryb21vLCBDdWF1aHTDqW1vYywgMDYxMDAgQ2l1ZGFkIGRlIE3DqXhpY28sIENETVg!5e0!3m2!1ses-419!2smx!4v1679353888804!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </p>
+{% endblock %}
+{% block be %}
+  <p>
+    <h3>Where you'll be...</h3>    
+    <h5>We explore:</h5>    
+    <ul>
+    <li>Foro Lindbergh</li>
+    <li>Estela de Luz</li>
+    <li style="color:red">Altar a la patria*</li>
+    <li style="color:red">El Castillo de Chapultepec*</li>
+    <li style="color:red">El Museo de Antropología*</li>
+    <li>Paseo de la Reforma</li>
+    <li>La Diana Cazadora</li>
+    <li>El Angel de la Independecia</li>
+    <li>El Monumento a la Madre</li>
+    <li>El Monumento a la Revolución</li>
+    <li>La Alameda Central</li>
+    <li>El Hemiciclo a Juárez</li>
+    <li>El Palacio de Bellas Artes</li>
+    <li>La Torre Latino</li>
+    <li>El Zocalo</li>
+    <li>La Catedral</li>
+    <li>Templo Mayor</li>
+    <li>La Glorieta de la Cibeles</li>
+    <p style="color:red">*Except on Mondays and evenings</p>
+    </p>
+    <div class="pic">
+      <img src="/static/f.jpg" alt="La Diana Cazadora" width="250">
+      <img src="/static/g.jpg" alt="Palacio de Bellas Artes" width="250">
+      <img src="/static/h.jpg" alt="Pet Friendly" width="250">
+      <img src="/static/i.jpg" alt="Museo de Antropología" width="250">
+      <img src="/static/j.jpg" alt="Torre Mayor y Estela de Luz" width="250">
+    </div>
+  <p>
+{% endblock %}
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="5000">
-      <img src="{{url_for('static', filename='1.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>    
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='2.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='3.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='4.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='5.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='6.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='7.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='8.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='9.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='10.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='11.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='12.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='13.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='14.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='15.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='16.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='17.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='18.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='19.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='20.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='21.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='22.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='23.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='24.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='25.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='26.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='27.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='28.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='29.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='30.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='31.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='32.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='33.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='34.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='35.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='36.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='37.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='38.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='39.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='40.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='41.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='42.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='43.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='44.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='45.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='46.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='47.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='48.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='49.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='50.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='51.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='52.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='53.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='54.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-    <div class="carousel-item " data-bs-interval="5000">
-      <img src="{{url_for('static', filename='55.jpg')}}" class="d-block w-50 mx-auto" alt="Biking on CDMX">
-    </div>
-  </div>
-</div>    
+{% block host %}
+  <p>
+    <h3>Meet your Host...</h3>
+    I'm a Mexico City native who has traveled all over the world. Ten years ago, I was forced to sell my car and took up cycling to get around the city. Now I realize that was the best thing that could have ever happened to me. Traversing this amazing city on two wheels allows you to discover new things on a daily basis, with a completely different point of view. I'd like to share my experiences with you, and help you understand what Mexico City is really about.
+    <div class="pic">
+      <img src="/static/alb.jpg" alt="Your Host" width="250">
+  </p>
+</div>
+{% endblock %}  
+<br/>
+{% block note %}
+<h6>Other things to note:</h6>
+The route is approximately 16 km (10 miles) and takes four hours to complete. It is recommended that you are in good physical shape though it is not essential as we will be going at a relaxed pace.
 {% endblock %}

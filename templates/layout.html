@@ -12,12 +12,6 @@
             <!-- Bootstrap CSS -->
             {{ bootstrap.load_css() }}
         {% endblock %}
-
-        <!-- http://getbootstrap.com/docs/5.1/ 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script> -->
         
         
         <!-- https://favicon.io/emoji-favicons/bicycle/ -->
@@ -32,6 +26,12 @@
         <title>Sights on Bikes 50: {% block title %}{% endblock %}</title>
         {% endblock %}
 
+        {% block scripts %}
+            <!-- Optional JavaScript -->
+            {{ bootstrap.load_js() }}
+        <script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script>
+        {% endblock %}
+
     </head>
 
     <body class="p-3 m-0 border-0 bd-example">
@@ -40,9 +40,9 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/"><span class="blue">Sights</span><span class="red">on</span><span class="yellow">Bikes</span><span class="green">50</span> <span class="red">Project</span></a>
                         <ul class="navbar-nav ms-auto mt-2">
-                            <li class="nav-item"><a class="nav-link" href="/info">Information</a></li>
                             <li class="nav-item"><a class="nav-link" href="/book">Reservations</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/albertours.mx">Instagram</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/rev">Reviews</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/insta">Instagram</a></li>
                         </ul>
             </div>
         </nav>
@@ -50,9 +50,29 @@
 
 
         <main>
-            {% block main %}{% endblock %}
-        </main>
+        
+        <h1>20+ Must-See Sights on CDMX</h1>
+        {% block main %}{% endblock %}
+        {% block pic %}{% endblock %}
 
+        {% block menu %}{% endblock %}
+        <div class="info">
+            {% if selection == "do" %}
+                {% block do %} {% endblock %}
+            
+            {% elif selection == "meet" %}
+                {% block meet %} {% endblock %}
+
+            {% elif selection == "be" %}
+                {% block be %} {% endblock %}
+            
+            {% elif selection == "host" %}
+                {% block host %} {% endblock %}
+            {% endif %}
+        </div>
+            {% block note %} {% endblock %}
+        </main>           
+    
         <footer class="mb-5 small text-center text-muted">
             Contact: 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -60,11 +80,6 @@
               </svg>
             <a href="https://ig.me/m/ALBERTOURS.MX">@AlberTOURS.mx</a>
         </footer>
-
-        {% block scripts %}
-            <!-- Optional JavaScript -->
-            {{ bootstrap.load_js() }}
-        {% endblock %}
 
     </body>
 
