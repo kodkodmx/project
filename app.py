@@ -1,5 +1,4 @@
 from flask import Flask, flash, redirect, render_template, request, url_for
-from helpers import apology
 from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)    
